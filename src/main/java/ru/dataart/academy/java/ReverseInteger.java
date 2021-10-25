@@ -12,7 +12,7 @@ public class ReverseInteger {
      * If result (number in reversed order) is out of int range [-2,147,483,648,  2,147,483,647] throw custom
      * unchecked exception. In main method (Main class) if exception happened output message with problem to user.
      */
-    public int reverse(int inputNumber) throws OutOfRangeError {
+    public int reverse(int inputNumber) {
         //Task implementation
         //output is for result
         long input = inputNumber;
@@ -37,7 +37,7 @@ public class ReverseInteger {
         if ((Integer.MIN_VALUE < output) && (output < Integer.MAX_VALUE)) {
             return (int) output;
         } else {
-            throw new OutOfRangeError("Out of range");
+            throw new OutOfRangeError("result integer is out of range");
         }
     }
 }
